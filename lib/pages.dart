@@ -27,22 +27,22 @@ class ArticlePage extends StatelessWidget {
                       image: NetworkImage(article.urlToImage),
                       fit: BoxFit.cover),
                   borderRadius: BorderRadius.circular(12.0),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.black,
                       blurRadius: 25.0,
                     ),
                   ]),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
             Container(
-              padding: EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(10.0),
               decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 88, 87, 87),
+                  color: const Color.fromARGB(255, 88, 87, 87),
                   borderRadius: BorderRadius.circular(13.0),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.black,
                       blurRadius: 25.0,
@@ -50,20 +50,20 @@ class ArticlePage extends StatelessWidget {
                   ]),
               child: Text(
                 article.source.name,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Container(
-              padding: EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(10.0),
               decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 54, 53, 53),
+                  color: const Color.fromARGB(255, 54, 53, 53),
                   borderRadius: BorderRadius.circular(13.0),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.black,
                       blurRadius: 25.0,
@@ -74,10 +74,10 @@ class ArticlePage extends StatelessWidget {
                 style: GoogleFonts.robotoSlab(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFFbababa)),
+                    color: const Color(0xFFbababa)),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 13,
             ),
             Text(
@@ -85,7 +85,7 @@ class ArticlePage extends StatelessWidget {
               style: GoogleFonts.robotoSlab(
                   fontSize: 21,
                   // fontWeight: FontWeight.bold,
-                  color: Color(0xFFbababa)),
+                  color: const Color(0xFFbababa)),
             )
           ],
         ),
